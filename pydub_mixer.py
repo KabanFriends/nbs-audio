@@ -1,6 +1,9 @@
 from pydub import AudioSegment
 import numpy as np
 
+AudioSegment.converter = "..\\..\\ffmpeg\\ffmpeg.exe"
+AudioSegment.ffmpeg = "..\\..\\ffmpeg\\ffmpeg.exe"
+AudioSegment.ffprobe ="..\\..\\ffmpeg\\ffprobe.exe"
 
 class Mixer(object):
     def __init__(self):
